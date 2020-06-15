@@ -1,0 +1,166 @@
+<DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sprawdź się!</title>
+</head>
+<body>
+<header>
+<div class="info">
+<a href="Zdrowy tryb życia.html">Strona głowna</a>
+</div>
+
+<script>
+function spr(){
+
+var odpA = document.getElementById("odpA").checked;
+var odpB = document.getElementById("odpB").checked;
+var odpC = document.getElementById("odpC").checked;
+
+console.log(odpA,odpB,odpC);
+if (odpA == true) odp = "dobrze";
+else odp = "źle";
+ 
+document.getElementById("wynik").innerHTML = "<br>" + odp;
+}
+</script>
+
+<script>
+function spr1(){
+
+var A = document.getElementById("A").checked;
+var B = document.getElementById("B").checked;
+var C = document.getElementById("C").checked;
+
+console.log(A,B,C);
+if (B == true) odp = "dobrze";
+else odp = "źle";
+
+document.getElementById("wynik1").innerHTML = "<br>" + odp;
+}
+</script>
+
+<script>
+function spr2(){
+
+var A2 = document.getElementById("A2").checked;
+var B2 = document.getElementById("B2").checked;
+var C2 = document.getElementById("C2").checked;
+
+console.log(A2,B2,C2);
+if (B2 == true) odp = "dobrze";
+else odp = "źle";
+
+document.getElementById("wynik2").innerHTML = "<br>" + odp;
+}
+</script>
+
+<script>
+function spr3(){
+
+var A3 = document.getElementById("A3").checked;
+var B3 = document.getElementById("B3").checked;
+var C3 = document.getElementById("C3").checked;
+
+console.log(A3,B3,C3);
+if (A3 == true)odp = "dobrze";
+else odp = "źle";
+
+document.getElementById("wynik3").innerHTML = "<br>" + odp;
+}
+</script>
+
+<script>
+function spr4(){
+
+var A4 = document.getElementById("A4").checked;
+var B4 = document.getElementById("B4").checked;
+var C4 = document.getElementById("C4").checked;
+
+console.log(A4,B4,C4);
+if (A4 == true)odp = "dobrze";
+else odp = "źle";
+
+document.getElementById("wynik4").innerHTML = "<br>" + odp;
+}
+</script>
+
+<script>
+function spr5(){
+
+var A5 = document.getElementById("A5").checked;
+var B5 = document.getElementById("B5").checked;
+var C5 = document.getElementById("C5").checked;
+
+console.log(A5,B5,C5);
+if (A5 == true)odp = "dobrze";
+else odp = "źle";
+
+document.getElementById("wynik5").innerHTML = "<br>" + odp;
+}
+</script>
+
+<div id="test">
+<h3>Dieta,aktywność fizyczna i sen to główne czynniki wpływające na nasze zdrowie.</h3><br>
+
+<input type="checkbox" name="wybory" value="A" id="odpA">Prawda<br>
+<input type="checkbox" name="wybory" value="B" id="odpB">Fałsz<br>
+<input type="checkbox" name="wybory" value="C" id="odpC">Nie wiem<br>
+<br>
+<div id="wynik"></div>
+</div>
+
+<div id="test1">
+<h3>Papierosy,alkohol,narkotyki i dopalacze mają dobry wpływna nasze zdrowie.</h3><br>
+
+<input type="checkbox" name="wybory" value="A" id="A">Prawda<br>
+<input type="checkbox" name="wybory" value="B" id="B">Fałsz<br>
+<input type="checkbox" name="wybory" value="C" id="C">Nie wiem<br>
+<br>
+<div id="wynik1"></div>
+</div>
+
+<div id="test2">
+<h3>Ile posiłków dziennie powinno się jeść?</h3><br>
+
+<input type="checkbox" name="wybory" value="A" id="A2">2<br>
+<input type="checkbox" name="wybory" value="B" id="B2">5<br>
+<input type="checkbox" name="wybory" value="C" id="C2">7<br>
+<br>
+<div id="wynik2"></div>
+</div>
+
+<div id="test3">
+<h3>Ile godzin snu potrzebuje człowiek?</h3><br>
+
+<input type="checkbox" name="wybory" value="B3" id="A3">8<br>
+<input type="checkbox" name="wybory" value="C3" id="B3">12<br>
+<input type="checkbox" name="wybory" value="A3" id="C3">5<br>
+<br>
+<div id="wynik3"></div>
+</div>
+
+<div id="test4">
+<h3>Ile litrów wody powinno się pić dziennie?</h3><br>
+
+<input type="checkbox" name="wybory" value="B4" id="A4">1.5<br>
+<input type="checkbox" name="wybory" value="C4" id="B4">0.5<br>
+<input type="checkbox" name="wybory" value="A4" id="C4">3<br>
+<br>
+<div id="wynik4"></div>
+</div>
+
+<div id="test5">
+<h3>Aktywność fizyczna rozwija mięśnie,układ krążeniowo-oddechowy oraz poprawia wydolność fizyczną.</h3><br>
+
+<input type="checkbox" name="wybory" value="B5" id="A5">Prawda<br>
+<input type="checkbox" name="wybory" value="C5" id="B5">Fałsz<br>
+<input type="checkbox" name="wybory" value="A5" id="C5">Nie wiem<br>
+<br>
+<div id="wynik5"></div>
+</div>
+<button onclick="spr(),spr1(),spr2(),spr3(),spr4(),spr5()">Sprawdź!</button>
+
+</body>
+</html>
+
